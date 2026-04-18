@@ -32,4 +32,14 @@ Tech Stack
 - SentenceTransformers  
 - Groq LLM (LLaMA 3.1)  
 - Streamlit  
-## 📁 Project Structure
+
+Project Structure
+  
+  project/
+  │
+  ├── agent.py # LangGraph agent logic
+  ├── kb_setup.py # Knowledge base setup
+  ├── capstone_streamlit.py # Streamlit UI
+  ├── data/ # Knowledge base documents
+  │ ├── doc_001.txt
+  │ ├── ...
