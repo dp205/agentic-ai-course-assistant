@@ -1,0 +1,9 @@
+Router Node
+
+The router node is responsible for deciding the next action in the agent workflow. It analyzes the user query and determines whether the system should perform retrieval, use a tool, or skip retrieval.
+
+This decision is typically made using a language model prompt that clearly defines when each route should be chosen. The output must be a single word such as "retrieve", "tool", or "skip".
+
+A well-designed router is critical because incorrect routing can lead to irrelevant answers or system failure. For example, a factual question should trigger retrieval, while a calculation should trigger a tool.
+
+The router ensures efficient use of resources and improves the accuracy of the assistant.

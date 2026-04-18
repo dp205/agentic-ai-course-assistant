@@ -1,0 +1,9 @@
+Tool Usage in Agents
+
+Tools are used when the knowledge base cannot answer a question. Examples include fetching the current date, performing calculations, or accessing external APIs.
+
+The tool node executes the required function and returns the result as a string. Tools must never raise exceptions, as this can crash the entire workflow.
+
+The router decides when a tool is needed. For example, a query like "What is 25 multiplied by 4?" should trigger a calculator tool instead of retrieval.
+
+Tool usage extends the capabilities of the assistant beyond static knowledge.

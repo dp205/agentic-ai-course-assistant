@@ -1,0 +1,9 @@
+Retrieval Augmented Generation (RAG)
+
+Retrieval Augmented Generation (RAG) is a technique used to improve the accuracy of language models by grounding their responses in external knowledge. Instead of relying only on pre-trained knowledge, the model retrieves relevant documents from a database and uses them to generate answers.
+
+In a RAG system, the user query is first converted into an embedding. This embedding is compared with stored document embeddings to find the most relevant documents. These documents are then passed as context to the language model.
+
+RAG reduces hallucination because the model is instructed to answer only using the retrieved context. If no relevant information is found, the system should explicitly say that it does not know.
+
+In this project, ChromaDB is used as the vector database to store and retrieve documents efficiently.

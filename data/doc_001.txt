@@ -1,0 +1,9 @@
+LangGraph Basics
+
+LangGraph is a framework used to build agentic workflows where different steps of reasoning are represented as nodes in a graph. Instead of a single prompt-response cycle, LangGraph enables structured execution where each node performs a specific task such as memory handling, routing, retrieval, or answering.
+
+A key concept in LangGraph is the State. The state stores all information shared across nodes, including the user question, retrieved documents, conversation history, and final answer. Every node reads from and writes to this state.
+
+LangGraph separates logic into nodes and edges. Nodes perform actions, while edges define the flow of execution. Conditional edges allow dynamic decision-making, such as choosing between retrieval or tool usage.
+
+This modular design makes the system more controllable, debuggable, and scalable compared to traditional chatbot systems.

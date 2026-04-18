@@ -1,0 +1,9 @@
+ChromaDB
+
+ChromaDB is a vector database used to store and retrieve documents based on semantic similarity. Each document is converted into an embedding using a model like SentenceTransformer, and these embeddings are stored in the database.
+
+When a user asks a question, the query is also converted into an embedding. ChromaDB then performs a similarity search to find the closest matching documents. These results are used as context for generating answers.
+
+Each document stored in ChromaDB should represent a single topic and be between 100 to 500 words for best results. Poorly written or vague documents lead to irrelevant retrieval results.
+
+ChromaDB supports metadata, allowing each document to be labeled with topics or categories. This helps in organizing and debugging the retrieval process.

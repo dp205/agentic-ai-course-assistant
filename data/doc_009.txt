@@ -1,0 +1,9 @@
+Evaluation Node
+
+The evaluation node checks the quality of the generated answer. It measures faithfulness, which indicates whether the answer is based only on the retrieved context.
+
+A score between 0.0 and 1.0 is assigned. If the score is below a threshold such as 0.7, the system retries the answer generation.
+
+This self-reflection mechanism improves reliability and reduces hallucination. It ensures that the assistant does not produce unsupported information.
+
+A retry limit is set to prevent infinite loops and ensure efficient execution.

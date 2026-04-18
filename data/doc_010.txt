@@ -1,0 +1,9 @@
+Streamlit Deployment
+
+Streamlit is used to build the user interface for the assistant. It provides a simple way to create interactive web applications using Python.
+
+The application maintains session state to store conversation history and thread_id. This ensures that memory persists across multiple interactions.
+
+Expensive operations such as loading models and databases are cached using decorators like @st.cache_resource to improve performance.
+
+The interface includes a chat window, user input box, and a button to start a new conversation. This makes the assistant accessible and easy to use.

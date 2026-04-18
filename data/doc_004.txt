@@ -1,0 +1,9 @@
+Memory in Agentic Systems
+
+Language models do not retain memory between API calls by default. To enable conversation continuity, a memory mechanism must be implemented.
+
+In this project, memory is handled using a MemorySaver, which stores the full conversation state using a unique thread_id. Each conversation session has its own thread_id, ensuring that context is preserved across multiple user queries.
+
+A sliding window approach is used to limit the number of stored messages, typically keeping the last 5 to 6 interactions. This prevents exceeding token limits while maintaining relevant context.
+
+Memory allows the agent to understand follow-up questions and references to previous messages, improving user experience and making the assistant more conversational.

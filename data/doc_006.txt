@@ -1,0 +1,9 @@
+Retrieval Node
+
+The retrieval node is responsible for fetching relevant information from the knowledge base. It converts the user query into an embedding and queries the vector database to retrieve the top matching documents.
+
+Typically, the top 3 results are selected and formatted into a context string. Each retrieved chunk should include its topic label for clarity.
+
+The quality of retrieval depends on the quality of the stored documents. If the documents are specific and well-written, retrieval will be accurate.
+
+The retrieved context is then passed to the answer node, which generates the final response using only this information.

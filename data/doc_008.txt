@@ -1,0 +1,9 @@
+Answer Node
+
+The answer node generates the final response using the retrieved context, tool results, and conversation history. It uses a system prompt that instructs the model to answer only based on the provided context.
+
+If no relevant context is available, the model should clearly state that it does not know. This prevents hallucination.
+
+The answer node combines multiple inputs and produces a coherent response for the user. It is one of the most critical components of the system.
+
+Proper prompt design in this node ensures accuracy and reliability.
